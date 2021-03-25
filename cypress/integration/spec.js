@@ -9,7 +9,7 @@ describe('Example site', () => {
   it('navigates to README', () => {
     cy.visit('/')
     cy.contains('a', 'README').click()
-    cy.location('pathname').should('equal', '/README/')
+    cy.location('pathname').should('equal', '/READMEz/')
   })
 
   it('goes directly to README', () => {
