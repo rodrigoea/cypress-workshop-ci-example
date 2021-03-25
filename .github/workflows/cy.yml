@@ -31,6 +31,6 @@ jobs:
         run: npx wait-on http://localhost:8080
 
       - name: Run Cypress tests 🧪
-        run: npm cypress run --record
+        run: npx cypress run --record
         env: 
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
