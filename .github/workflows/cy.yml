@@ -8,13 +8,13 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies 📦
-        run: yarn ci
+        run: npm ci
 
       - name: Build the app 🏗
-        run: yarn run build
+        run: npm run build
 
       - name: Start the app 📤
-        run: yarn start &
+        run: npm start &
 
       - name: Run Cypress tests 🧪
-        run: yarn run cy:run
+        run: npm run cy:run
